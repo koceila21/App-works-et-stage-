@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorksUrApp</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div>🚀 WorksUrgent</div>
+  <div id="userInfo"></div>
+</header>
+
+<div class="container">
+
+  <div class="sidebar">
+    <button onclick="showLogin()">🔐 Login</button>
+    <button onclick="showCandidateProfile()">👤 Profil</button>
+    <button onclick="loadJobs()">💼 Jobs</button>
+    <button onclick="loadInternships()">🎓 Stages</button>
+    <button onclick="loadRecommendedJobs()">🎯 Recommandés</button>
+    <button onclick="showUploadCV()">📄 CV</button>
+    <button onclick="showMap()">🗺️ Carte</button>
+    <button onclick="showAdminDashboard()">💼 Admin</button>
+  </div>
+
+  <div class="content" id="content"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
